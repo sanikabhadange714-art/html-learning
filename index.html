@@ -1,69 +1,78 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sanika | Day 3 HTML CSS</title>
+    <title>Sanika | Day 4 HTML Form</title>
 
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #eef2f3;
             font-family: Arial, sans-serif;
             padding: 20px;
         }
 
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+
         h1 {
+            text-align: center;
             color: #2c3e50;
         }
 
-        h2 {
-            color: #34495e;
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
-        p {
-            color: #555;
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
-        .box {
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        a {
-            color: blue;
-            text-decoration: none;
+        button:hover {
+            background-color: #1a252f;
         }
     </style>
-
 </head>
+
 <body>
 
     <div class="box">
-        <h1>Hello, I am learning Frontend</h1>
-        <h2>Name: Sanika Bhadange</h2>
+        <h1>Contact Me</h1>
 
-        <p>This is my first HTML page.</p>
-        <p>I am a 3rd year student and I want a job.</p>
-        <p>Day 3 completed successfully!</p>
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
 
-        <hr>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
 
-        <h3>My Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>Basic CSS</li>
-            <li>Learning JavaScript</li>
-        </ul>
+            <label>Message</label>
+            <textarea rows="4" placeholder="Enter your message"></textarea>
 
-        <h3>My Profile</h3>
-        <a href="https://github.com/sanikabhadange714" target="_blank">
-            Visit my GitHub
-        </a>
-
-        <br><br>
-
-        <img src="https://via.placeholder.com/200" alt="My Photo">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
 </body>
 </html>
-
