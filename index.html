@@ -1,78 +1,96 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sanika | Day 4 HTML Form</title>
+    <title>Sanika Bhadange | Resume</title>
 
     <style>
         body {
-            background-color: #eef2f3;
             font-family: Arial, sans-serif;
-            padding: 20px;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
         }
 
-        .box {
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
             background-color: white;
+            margin: 15px;
             padding: 20px;
             border-radius: 10px;
-            max-width: 400px;
-            margin: auto;
         }
 
-        h1 {
-            text-align: center;
+        h2 {
             color: #2c3e50;
         }
 
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
+        ul {
+            padding-left: 20px;
         }
 
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            margin-top: 15px;
-            width: 100%;
-            padding: 10px;
+        footer {
             background-color: #2c3e50;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            text-align: center;
+            padding: 10px;
         }
 
-        button:hover {
-            background-color: #1a252f;
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="box">
-        <h1>Contact Me</h1>
+    <header>
+        <h1>Sanika Bhadange</h1>
+        <p>Frontend Learner | BCS 3rd Year</p>
+    </header>
 
-        <form>
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name">
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a BCS 3rd year student learning frontend development.
+            I am passionate about web development and looking for a job opportunity.
+        </p>
+    </section>
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Basic CSS</li>
+            <li>Learning JavaScript</li>
+        </ul>
+    </section>
 
-            <label>Message</label>
-            <textarea rows="4" placeholder="Enter your message"></textarea>
+    <section>
+        <h2>Education</h2>
+        <p>BCS – 3rd Year (Pursuing)</p>
+    </section>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <section>
+        <h2>Contact</h2>
+        <p>Email: your-email@gmail.com</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/sanikabhadange714" target="_blank">
+                sanikabhadange714
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Sanika Bhadange</p>
+    </footer>
 
 </body>
 </html>
